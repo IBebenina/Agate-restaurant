@@ -1,0 +1,60 @@
+@mixin pseudo-element ($content, $back-color) {
+    content: $content;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: $back-color;
+    color: $primary-color;
+    position: absolute;
+    top: -29px;
+    left: -29px;
+    font-size: 14px;
+    font-weight: $secondary-font-weight;
+    line-height: 58px;
+    text-align: center;
+}
+
+@mixin pseudo-element1024 {
+    width: 46px;
+    height: 46px;
+    top: -23px;
+    left: -23px;
+    font-size: 12px;
+    line-height: 46px;
+}
+
+@mixin pseudo-element768 {
+    width: 56px;
+    height: 56px;
+    top: -28px;
+    left: -28px;
+    font-size: 14px;
+    line-height: 56px;
+}
+
+@mixin button-style ($text-color) {
+    display: block;
+    margin: 0 auto;
+    width: 312px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid $text-color;
+    border-radius: 30px;
+    color: $text-color;
+    font-size: $button-font;
+    font-weight: $secondary-font-weight;
+    transition: all .8s;
+}
+
+@mixin button-style1024 {
+    font-size: 1.7rem;
+    width: 248px;
+    height: 48px;
+    line-height: 48px;
+}
+
+@mixin button-hover {
+    background-color: #FFA60D;
+    color: $primary-color;
+    border: none;
+}

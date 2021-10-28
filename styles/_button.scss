@@ -1,0 +1,19 @@
+.button--white {
+    @include button-style($primary-color);
+    &:hover {
+        @include button-hover;
+    }
+}
+
+.button--dark {
+    @include button-style(#000);
+    &:hover {
+        @include button-hover;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .button {
+        @include button-style1024;
+    }
+}

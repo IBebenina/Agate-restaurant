@@ -1,0 +1,35 @@
+.menu {
+    align-self: center;
+    &__item {
+        display: inline-block;
+        color: $primary-color;
+        font-size: $menu-font;
+        transition: all;
+        &:not(:last-child)::after {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 1.6rem;
+            background-color: #fff;
+            margin: 0 25px;
+        }
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menu__item {
+        font-size: 1.8rem;
+        &:not(:last-child)::after {
+            height: 1.3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .menu__item {
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,28 @@
+.footer {
+    background-color: #262626;
+    color: $primary-color;
+    padding: 100px 0;
+    &__text {
+        font-size: $secondary-font;
+        font-weight: $primary-font-weight;
+        color: #b1b1b1;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        padding: 80px 0 78px;
+        &__text {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 70px 0 65px;
+        &__text {
+            font-size: 1.8rem;
+        }
+    }
+}

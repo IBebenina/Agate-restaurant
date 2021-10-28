@@ -1,0 +1,29 @@
+.to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #FFAC1C;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 28px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 640px) {
+    .to-top {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .to-top {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+}

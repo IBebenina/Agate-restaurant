@@ -1,0 +1,33 @@
+.general-block {
+    color: $primary-color;
+    padding: 218px 0 185px;
+    &__text {
+        font-size: $secondary-font;
+        margin: 35px 0 60px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .general-block {
+        padding: 183px 0 153px;
+        &__text {
+            font-size: 1.8rem;
+            margin: 35px 0 63px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .general-block {
+        padding: 171px 0 99px;
+        &__text {
+            margin: 35px 0 66px;
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .general-block {
+        padding: 171px 10px 99px;
+    }
+}

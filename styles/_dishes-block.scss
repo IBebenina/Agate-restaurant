@@ -1,0 +1,35 @@
+.dishes-block {
+    padding: 100px 0;
+    &__text {
+        font-weight: $primary-font-weight;
+        font-size: $secondary-font;
+        color: $secondary-color;
+        margin: 30px 0 60px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .dishes-block {
+        padding: 100px 40px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .dishes-block {
+        padding: 80px 40px;
+        &__text {
+            font-size: 2.2rem;
+            margin: 30px 0 48px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dishes-block {
+        padding: 70px 24px 70px 52px;
+        &__text {
+            font-size: 2rem;
+            margin: 20px 0 58px;
+        }
+    }
+}

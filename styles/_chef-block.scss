@@ -1,0 +1,69 @@
+.chef-block {
+    background-color: $bg-color;
+    padding: 100px 0;
+    &__image {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        img {
+            width: 100%;
+            max-width: 328px;
+        }
+    }
+    &__secondary-text {
+        font-size: $secondary-font;
+        font-weight: $primary-font-weight;
+        margin: 30px 0;
+        color: #474747;
+    }
+    &__primary-text {
+        font-weight: $primary-font-weight;
+        font-size: $primary-font;
+        max-width: 939px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .chef-block {
+        padding: 80px 0;
+        &__image {
+            img {
+                max-width: 282px;
+            }
+        }
+        &__secondary-text {
+            font-size: 2.2rem;
+            margin: 30px 0;
+        }
+        &__primary-text {
+            font-size: 2.2rem;
+            max-width: 691px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .chef-block {
+        padding: 70px 0;
+        &__image {
+            margin-bottom: 20px;
+            img {
+                max-width: 251px;
+            }
+        }
+        &__secondary-text {
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+        &__primary-text {
+            font-size: 2rem;
+            max-width: 626px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .chef-block {
+        padding: 70px 10px;
+    }
+}
